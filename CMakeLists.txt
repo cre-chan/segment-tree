@@ -3,4 +3,6 @@ project(SegTree)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SegTree main.cpp)
+include_directories(SegTree includes)
+
+add_executable(SegTree main.cpp includes/SegTree.hpp)
